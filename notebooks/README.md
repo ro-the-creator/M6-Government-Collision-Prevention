@@ -72,27 +72,3 @@ There are no missing rows for `crash_date` or `number_of_persons_injured`. While
 
 ***
 
-
-Can you help me decide on a model to use based on this scope:
-
-### Proposed Business Question
-
-**Do electric vehicles during certain seasons contribute to more people injured?**
-
-### Proposed Variables
-
-- y = `number_of persons_injured` (Discrete)
-
-- X1 = `is_electric` (Binary)
-    - From `vehicle_type_code_#`, flag for e-bikes, e-scooters, etc.
-
-- X2 = `crash_date` (Categorical)
-    - **Winter:** Dec, Jan, Feb
-
-    - **Spring:** Mar, Apr, May
-
-    - **Summer:** Jun, Jul, Aug
-
-    - **Fall:** Sep, Oct, Nov
-
-- X3 =
