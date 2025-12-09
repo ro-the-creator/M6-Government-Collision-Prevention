@@ -68,6 +68,8 @@ There are no missing rows for `crash_date` or `number_of_persons_injured`. While
 
 - For all columns regarding vehicle types, we assumed that missing values in these rows did not indicate electric vehicle involvement unless explicitely stated.
 
+- Fake registrations for EVs (hit-and-runs)
+
 <br>
 
 ***
