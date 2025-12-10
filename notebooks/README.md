@@ -80,10 +80,8 @@ This markdown documents the initial EDA, cleaning, and proposed scope of the pro
 `month` & `season`
 
 ### EDA Findings
-
-- Government vehicles are involved in 157817/370001(~43%) of collisions in NYC
   
-Hour of Day vs Number of Collisions | Barchart displaying Season vs. Number of Collisions grouped by Cause
+Hour of Day vs Number of Collisions (All Collisions) | Barchart displaying Season vs. Number of Collisions grouped by Cause (All Collisions)
 :-------------------------:|:-------------------------:
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/9bab05e7-43b9-40c3-8a49-62d93f79b0d9" /> | <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/d6ca9c7c-95b4-4c75-aa6f-0919babb53dd" />
 
@@ -102,6 +100,7 @@ Hour of Day vs Number of Collisions | Barchart displaying Season vs. Number of C
             - Vehicle Failure
             - Fewer People on Non-Motorized Vehicles
 
+- Government vehicles were involved in 157817/370001(~43%) of collisions in NYC from January 2022 - December 2025
 <details>
   <summary>
  KPIs from collisions with government-owned vehicles (As listed in DataFrame):</summary>
