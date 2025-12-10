@@ -82,6 +82,26 @@ This markdown documents the initial EDA, cleaning, and proposed scope of the pro
 ### EDA Findings
 
 - Government vehicles are involved in 157817/370001(~43%) of collisions in NYC
+  
+Hour of Day vs Number of Collisions | Barchart displaying Season vs. Number of Collisions grouped by Cause
+:-------------------------:|:-------------------------:
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/9bab05e7-43b9-40c3-8a49-62d93f79b0d9" /> | <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/d6ca9c7c-95b4-4c75-aa6f-0919babb53dd" />
+
+- Line Chart Insights:
+     - The two biggest jumps in collisions are the hours leading up to 8 AM and the hours leading up to 5 PM, indicating that most collisions may happen on the way to or from work.
+     -  The majority of collisions happen during nighttime, indicating that the dark may be a factor in the collisions.
+- Bar Chart Insights:
+    - Surprisingly, Summer had the most collisions, and Winter had the least, despite dangerous weather conditions
+        - An article based in Virginia cites the following factors as an explanation for the rise in collisions during summertime:
+            - Inexperienced Teens on Summer Break
+            - Traffic Congestion
+            - Road Construction
+            - Tourist in unfamiliar locations
+            - Increased Number of Drivers and Trip Duration
+            - Drunk Driving
+            - Vehicle Failure
+            - Fewer People on Non-Motorized Vehicles
+
 <details>
   <summary>
  KPIs from collisions with government-owned vehicles (As listed in DataFrame):</summary>
@@ -150,10 +170,6 @@ This markdown documents the initial EDA, cleaning, and proposed scope of the pro
     - Texting                                                       4
 </details>
 
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/8cd7acb1-4b2e-4149-8a09-4230d5df2ee5" />
-
-<sub>Barchart displaying Season vs. Number of People Injured</sub>
-
 ### Assumptions & Limitations(*)
 
 - For all columns regarding vehicle types, we assumed that missing values in these rows did not indicate government vehicle involvement unless explicitly stated.
@@ -163,7 +179,9 @@ This markdown documents the initial EDA, cleaning, and proposed scope of the pro
 -  The EDA puts all vehicles contributing to a collision on one line, separated by "|". This may affect the specific count of government vehicles, but it correctly gives the number of collisions involving government vehicles.
 
 -  We assumed that the type of government-owned vehicles is listed with priority over the style of vehicle. E.g., we assume that none of the vehicles listed as a Sedan are government-owned, or else they would have been listed as such.
-<br>
 
+### References
+https://virginiatrialfirm.com/car-accident-lawyers/why-are-car-accidents-more-likely-to-happen-in-the-summer/
+<br>
 ***
 
