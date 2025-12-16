@@ -76,8 +76,35 @@ With concerns over increased costs from settlements, workers' compensation, etc.
 
 <div align='center'>
 
-With proper training, unfortunate events like these can be prevented and reduce costs associated with these horrific collisions.
+With proper training, unfortunate events like these can be prevented, and the costs associated with these horrific collisions can be reduced.
 
 </div>
+
+## Modeling Metrics
+
+<div align='center'>
+
+Given our business question, we chose features that could best infer the factors that contribute to government vehicle collisions causing injury/death. Our features were categorical and binary, with the categorical variables requiring One Hot Encoding for the model to be able to interpret each borough and season.
+
+</div>
+
+### **Features**
+- Borough (Queens, Bronx, Manhattan, Brooklyn, Staten Island)
+
+- Season (Winter, Spring, Summer, Fall)
+
+- Is Government Vehicle (Y/N)
+
+### Evaluation Metrics
+
+<div align='center'>
+
+Looking at our errors, our complex model beat out our simple and baseline models, indicating to us that our features were indeed useful and not detrimental to the model's performance. This is the model we eventually input into our app, giving us correct injury/death identification roughyl 60% of the time.
+
+Taking a deeper look into our confusion matrix, there was a reasonable balance between precision vs. recall. As a result, we got ~0.50 F1-scores across the two variables, injury/death and no injury/death. Although there is much room for improvement, the lack of absurdly high precision/recall values tells us that our data is not overfit or leaked.
+
+</div>
+
+## Ethics & Assumptions
 
 
