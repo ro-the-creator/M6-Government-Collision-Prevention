@@ -11,7 +11,67 @@
 
 # Project Overview
 
-(README Directory here)
+→ [Project Overview](#project-overview)  
+  → [About Us](#about-us)  
+  → [Data Source](#data-source)  
+  → [Business Problem](#business-problem)  
+→ [Modeling Metrics](#modeling-metrics)  
+  → [Features](#features)  
+  → [Evaluation Metrics](#evaluation-metrics)  
+→ [Ethics & Assumptions](#ethics--assumptions)  
+  → [Bias](#bias)  
+  → [Ethics](#ethics)  
+  → [Assumptions](#assumptions)  
+→ [Deployment](#deployment)  
+
+
+## About Us
+
+<div align='center'>
+
+<img width="400" height="400" alt="s-blob-v1-IMAGE-bLZk3RNRCGY" src="https://github.com/user-attachments/assets/82c8ff05-b68e-4b8a-a665-a62085efaf35" />
+
+### **Rolando Mancilla-Rojas**
+
+23 Years Old
+
+Data Analyst @ The Marcy Lab School
+
+Project Management
+
+Modeling
+
+GitHub
+
+App Deployment
+
+***
+
+<br>
+
+<img width="400" height="400" alt="s-blob-v1-IMAGE-8ac22berePU" src="https://github.com/user-attachments/assets/02c04924-3c84-4b42-85a4-2667db86fe46" />
+
+
+### **Debo Odutola**
+
+21 Years Old
+
+Data Analyst @ The Marcy Lab School
+
+EDA
+
+GitHub
+
+Visuals
+
+Cleaning
+
+Feature Engineering
+
+***
+
+</div>
+
 
 ## Data Source
 
@@ -106,5 +166,66 @@ Taking a deeper look into our confusion matrix, there was a reasonable balance b
 </div>
 
 ## Ethics & Assumptions
+
+<div align='center'>
+
+In creating features and modeling, there were several key ethical points that we noted. While this may not drastically influence the model's performance, it was important to be aware of these points in order to better interpret the output of the model.
+
+</div>
+
+### Bias
+
+- Injury and death are grouped together, which can dilute the perceived severity.
+  - For example, a bruise and a fatal crash fall within the same category.
+
+- The data comes from an MV104-AN police report, meaning the officer who completed the form may have been the driver of the government vehicle involved.
+
+- This may account for the large number of accidents with an ‘unspecified’ cause involving government vehicles.
+
+### Ethics
+
+- The system will be used solely for its intended purpose of targeted training, aimed at improving the stakeholder’s reputation and making New York City streets safer.
+
+- If the model suggests a high likelihood, it must not be used to justify increasing tax costs.
+
+- If the model suggests a low likelihood, it must not be used to downplay or conceal the risk of injury.
+
+### Assumptions
+
+- TheFuzz correctly categorized records using a similarity threshold of 70.
+
+- For all vehicle-type columns, we assumed that missing values do not indicate government vehicle involvement unless explicitly stated.
+
+- For Ambulance, Bus, Garbage Truck, Delivery Truck, and Fire Truck, we assumed these vehicles are government-owned rather than commercial or private.
+
+- The EDA places all vehicles contributing to a collision on one line, separated by “|”, which may affect the specific count of government vehicles but correctly reflects the number of collisions involving government vehicles.
+
+- We assumed that government vehicle types are listed with priority over vehicle style; for example, a vehicle listed as a Sedan is assumed not to be government-owned.
+
+<div align='center'>
+
+More information, including the cleaning process, assumptions, and bias, can be found [here](./notebooks/)
+
+</div>
+
+## Deployment
+
+<div align='center'>
+
+To run the app locally, you can run it in the preloaded environment straight from GitHub CodeSpaces:
+
+<br>
+
+<img width="319" height="269" alt="image" src="https://github.com/user-attachments/assets/3986290b-ff66-4493-bfc2-90e99cb5df6b" />
+
+<br>
+
+</div>
+
+1. Fork the repository.
+
+2. Create a workspace within the repository.
+
+3. Run `streamlit run app.py` inside the app folder.
 
 
