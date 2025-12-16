@@ -1,8 +1,11 @@
-# Module 6: Predicting EV-related Collision Injuries & Seasonal Trends
+# Module 6: Pinpointing High-Risk Inferential Factors for Municipal Car Safety
 
 <div align='center'>
 
-### **A predictive modeling project for the NYPD, forecasting seasonal trends of injuries involving government vehicles in New York City.**
+<img width="2000" height="1429" alt="dcas" src="https://github.com/user-attachments/assets/c395712f-1f9f-4633-9e8d-a46f1c338a24" />
+
+
+### **An inferential modeling project for the Department of Citywide Administrative Services (DCAS), Inferring seasonal and borough trends of collisions resulting in injury/death involving government vehicles in New York City.**
 </div>
 
 
@@ -59,14 +62,22 @@ The dataset consists of vehicle accidents, where each row represents a unique cr
 
 <div align='center'>
 
-With increased tensions in NYC stemming from electric scooters and bikes, there has been a sharp spotlight on EV regulations. 
+With concerns over increased costs from settlements, workers' compensation, etc., the DCAS wants a way to infer government vehicle collisions that cause injury/death. They hope to roll out targeted training by borough and season, and allocate resources more effectively to areas and times with higher collision rates involving injury/death.
 
-### **Safety concerns predate that rule change. A 2019 study by doctors at NYU Langone Medical Center, based on national data, found that e-bike riders were more likely to be seriously injured in crashes than riders of human-powered bicycles.**
+### **Eight people were hurt when an MTA bus crashed in Queens... Sources tell CBS News New York the bus driver misjudged the closeness of the curb.**
 
 </div>
 
 <div align='right'>
 
-#### **- Evan Simko-Bednarski, New York Daily News, TNS**
+#### **- John Dias, Jesse Zanger, [CBS News](https://www.cbsnews.com/newyork/news/flushing-queens-mta-bus-crash/)**
 
 </div>
+
+<div align='center'>
+
+With proper training, unfortunate events like these can be prevented and reduce costs associated with these horrific collisions.
+
+</div>
+
+
